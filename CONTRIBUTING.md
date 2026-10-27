@@ -1,5 +1,10 @@
 # Contributing
 
+For this fork, open issues and pull requests in
+[cunyu6666/PickLike](https://github.com/cunyu6666/PickLike). See the
+[README](README.md) for PickLike setup and upstream synchronization. The original
+shadcn/ui contribution guide below is retained for the inherited codebase.
+
 Thanks for your interest in contributing to ui.shadcn.com. We're happy to have you here.
 
 Please take a moment to review this document before submitting your first pull request. We also strongly recommend that you check for open issues and pull requests to see if someone else is working on something similar.

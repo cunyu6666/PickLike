@@ -22,6 +22,19 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 w-full bg-background">
       <div className="container-wrapper px-6 group-has-data-[slot=designer]/layout:max-w-none 3xl:fixed:px-0">
         <div className="flex h-(--header-height) items-center **:data-[slot=separator]:h-4! group-has-data-[slot=designer]/layout:fixed:max-w-none 3xl:fixed:container">
+          <Link
+            href="/"
+            aria-label="PickLike home"
+            className="mr-6 hidden items-center gap-2 rounded-sm font-semibold tracking-tight outline-offset-4 lg:inline-flex"
+          >
+            <span
+              className="flex size-7 items-center justify-center rounded-lg bg-primary text-sm text-primary-foreground"
+              aria-hidden="true"
+            >
+              P
+            </span>
+            PickLike
+          </Link>
           <MobileNav
             tree={pageTree}
             items={siteConfig.navItems}

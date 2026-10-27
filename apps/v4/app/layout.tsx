@@ -24,14 +24,14 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL(siteConfig.url),
   description: siteConfig.description,
-  keywords: ["Next.js", "React", "Tailwind CSS", "Components", "shadcn"],
+  keywords: ["PickLike", "Design System", "React", "Tailwind CSS", "shadcn/ui"],
   authors: [
     {
-      name: "shadcn",
-      url: "https://shadcn.com",
+      name: "cunyu",
+      url: siteConfig.links.author,
     },
   ],
-  creator: "shadcn",
+  creator: "cunyu",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     images: [
       {
-        url: `${siteConfig.url}/opengraph-image.png`,
+        url: siteConfig.ogImage,
         width: 1200,
-        height: 630,
+        height: 628,
         alt: siteConfig.name,
       },
     ],
@@ -52,13 +52,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteConfig.name,
     description: siteConfig.description,
-    images: [`${siteConfig.url}/opengraph-image.png`],
-    creator: "@shadcn",
+    images: [siteConfig.ogImage],
   },
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
+    icon: { url: "/picklike-icon.svg", type: "image/svg+xml" },
   },
   manifest: `${siteConfig.url}/site.webmanifest`,
   alternates: {
