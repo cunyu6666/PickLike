@@ -43,6 +43,7 @@
     "pub:rc": "cd packages/shadcn && pnpm pub:rc",
     "pub:release": "cd packages/shadcn && pnpm pub:release",
     "test:dev": "turbo run test --force --only",
+    "test:picklike": "vitest run apps/v4/lib/config.test.ts apps/v4/components/picklike-preview.test.tsx",
     "test": "pnpm --filter=v4 registry:build && start-server-and-test v4:dev http://localhost:4000 test:dev",
     "validate:registries": "pnpm --filter=v4 validate:registries",
     "test:apps": "pnpm --filter=v4 test:apps"

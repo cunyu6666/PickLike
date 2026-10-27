@@ -1,12 +1,17 @@
+const siteUrl = (
+  process.env.NEXT_PUBLIC_APP_URL || "http://localhost:4000"
+).replace(/\/$/, "")
+
 export const siteConfig = {
-  name: "shadcn/ui",
-  url: "https://ui.shadcn.com",
-  ogImage: "https://ui.shadcn.com/og.jpg",
+  name: "PickLike",
+  url: siteUrl,
+  ogImage: `${siteUrl}/og`,
   description:
-    "Composable, accessible components with thoughtful defaults. Build your own component library with code you can customize, extend, and make your own.",
+    "A personal design system built on shadcn/ui. Thoughtful components, shared foundations, and open code to make your own.",
   links: {
-    twitter: "https://twitter.com/shadcn",
-    github: "https://github.com/shadcn-ui/ui",
+    author: "https://github.com/cunyu6666",
+    github: "https://github.com/cunyu6666/PickLike",
+    upstream: "https://github.com/shadcn-ui/ui",
   },
   navItems: [
     {
@@ -30,16 +35,8 @@ export const siteConfig = {
       label: "Charts",
     },
     {
-      href: "/docs/directory",
-      label: "Directory",
-    },
-    {
-      href: "/typeset",
-      label: "Typeset",
-    },
-    {
-      href: "/create",
-      label: "Create",
+      href: "/docs/theming",
+      label: "Theming",
     },
   ],
 }

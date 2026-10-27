@@ -58,6 +58,9 @@ jobs:
 
       - run: pnpm lint
 
+      - name: Test PickLike branding and previews
+        run: pnpm test:picklike
+
   format:
     runs-on: ubuntu-latest
     name: pnpm format:check
